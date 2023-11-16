@@ -1,0 +1,93 @@
+.container {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+.sun {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 4em white;
+}
+
+
+/* Earth */
+.earth {
+    position: relative;
+    border-style: solid;
+    /* border-color: rgb(255, 255, 255) transparent transparent transparent; */
+    border-width: 0  0,1em 0,1em;
+    border-radius: 50%; 
+}
+
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 38s linear infinite;
+}
+
+.earth::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+}
+
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 5em;
+    height: 5em;
+    background-color: rgb(255, 145, 0);
+    box-shadow: 0 0 2em rgb(225, 145, 0);
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(2880deg);
+    }
+}
+
+.earth1 {
+    position: relative;
+    border-style: solid;
+    /* border-color: rgb(255, 255, 255) transparent transparent transparent; */
+    border-width: 0  0,1em 0,1em;
+    border-radius: 50%; 
+}
+
+.earth1 {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 38s linear infinite;
+}
+
+.earth1::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+}
+
+.earth1::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 5em;
+    height: 5em;
+    background-color: rgb(255, 145, 0);
+    box-shadow: 0 0 2em rgb(225, 145, 0);
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(2880deg);
+    }
+}
